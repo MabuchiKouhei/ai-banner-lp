@@ -278,18 +278,12 @@
                 <p class="font-bold text-[18px] leading-[1.6] text-white drop-shadow-lg">出会い系</p>
                 <div class="relative h-auto w-full overflow-hidden rounded-lg border-2 border-accent/30 shadow-video hover:shadow-videoHover transition-all duration-300 group-hover:scale-105">
                   <div class="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent pointer-events-none z-10"></div>
-<video
-  src="https://mabuchikouhei.github.io/ai-banner-lp/ai_banner/movie/banner5.mp4"
-  loop 
-  autoplay 
-  muted 
-  playsinline 
-  preload="auto"
-  width="600"
-  style="display:inline-block; margin:0; width:600px; height:auto;"
-  oncanplay="this.play()"
->
-</video>
+  <video
+    src="https://mabuchikouhei.github.io/ai-banner-lp/ai_banner/movie/banner5.mp4"
+    loop autoplay muted playsinline preload="metadata"
+    width="600"
+    style="display:inline-block; margin:0; width:600px; height:auto;"
+  >
                 </div>
               </div>
 
@@ -345,10 +339,10 @@
                     </div>
                   </div>
                   <div class="relative h-[216px] w-full md:w-[384px] overflow-hidden rounded-lg shadow-video hover:shadow-videoHover transition-all duration-300 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent pointer-events-none"></div>
-                    <div class="absolute inset-0 border-2 border-accent/20 rounded-lg pointer-events-none"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent pointer-events-none z-10"></div>
+                    <div class="absolute inset-0 border-2 border-accent/20 rounded-lg pointer-events-none z-10"></div>
                     <video
-                      class="w-full h-full object-cover relative z-5"
+                      class="w-full h-full object-cover"
                       autoplay
                       loop
                       muted
@@ -369,10 +363,10 @@
                     </div>
                   </div>
                   <div class="relative h-[227px] w-full md:w-[336px] overflow-hidden rounded-lg shadow-video hover:shadow-videoHover transition-all duration-300 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent pointer-events-none"></div>
-                    <div class="absolute inset-0 border-2 border-accent/20 rounded-lg pointer-events-none"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent pointer-events-none z-10"></div>
+                    <div class="absolute inset-0 border-2 border-accent/20 rounded-lg pointer-events-none z-10"></div>
                     <video
-                      class="w-full h-full relative z-5 object-cover"
+                      class="w-full h-full object-cover"
                       autoplay
                       loop
                       muted
@@ -970,31 +964,6 @@
           }
         });
       });
-
-      // ページ読み込み後に全ての動画を再生
-document.addEventListener('DOMContentLoaded', function() {
-  const videos = document.querySelectorAll('video');
-  videos.forEach(video => {
-    video.muted = true; // 確実にミュート
-    
-    // Intersection Observerで画面内に入ったら再生
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          video.play().catch(e => {
-            console.log('Video autoplay failed:', e);
-            // ユーザーインタラクション後に再生を試みる
-            document.addEventListener('click', () => {
-              video.play();
-            }, { once: true });
-          });
-        }
-      });
-    });
-    
-    observer.observe(video);
-  });
-});
     </script>
   </body>
 </html>
