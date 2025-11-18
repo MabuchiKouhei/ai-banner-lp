@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIが「動くバナー」と「最適コピー」を自動生成。LLM制限なしの独自AIで、広告効果を最大化。</title>
+    <meta
+      name="description"
+      content="忍者DSPのAIが静止画バナーを「動くバナー」に自動変換。広告コピーも大量生成しA/Bテストを最適化。CPA33%改善の実績も。一般的なLLMの制限を受けない独自AIで、マッチングアプリや電子コミック、ライブチャット等の広告効果を最大化します。無料サンプル作成受付中。"
+    />
+    <meta name="robots" content="noindex, nofollow">
+    <!-- OGP -->
+    <meta
+      property="og:title"
+      content="AIが「動くバナー」と「最適コピー」を自動生成。LLM制限なしの独自AIで、広告効果を最大化。"
+    />
+    <meta
+      property="og:description"
+      content="忍者DSPのAIが静止画バナーを「動くバナー」に自動変換。広告コピーも大量生成しA/Bテストを最適化。CPA33%改善の実績も。一般的なLLMの制限を受けない独自AIで、マッチングアプリや電子コミック、ライブチャット等の広告効果を最大化します。無料サンプル作成受付中。"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.shinobi.jp/adtargeting/ai_banner/index.html"
+    />
+    <meta
+      property="og:image"
+      content="https://www.shinobi.jp/adtargeting/ai_banner/img/ogp.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="AIが「動くバナー」と「最適コピー」を自動生成。LLM制限なしの独自AIで、広告効果を最大化。"
+    />
+    <meta
+      name="twitter:description"
+      content="忍者DSPのAIが静止画バナーを「動くバナー」に自動変換。広告コピーも大量生成しA/Bテストを最適化。CPA33%改善の実績も。一般的なLLMの制限を受けない独自AIで、マッチングアプリや電子コミック、ライブチャット等の広告効果を最大化します。無料サンプル作成受付中。"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.shinobi.jp/adtargeting/ai_banner/img/ogp.png"
+    />
+
+    <link
+      rel="canonical"
+      href="https://www.shinobi.jp/adtargeting/ai_banner/index.html"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="https://www.shinobi.jp/adtargeting/ai_banner/img/apple-touch-icon-180x180.png"
+    />
+    <link rel="icon" type="image/png" href="https://www.shinobi.jp/adtargeting/ai_banner/img/icon-192x192.png" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-STJ4R3JBRW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-STJ4R3JBRW");
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      const originalWarn = console.warn;
+      console.warn = function (message, ...args) {
+        if (
+          typeof message === "string" &&
+          message.includes(
+            "cdn.tailwindcss.com should not be used in production"
+          )
+        ) {
+          return;
+        }
+        originalWarn.apply(console, [message, ...args]);
+      };
+    </script>
+
+    <!-- Tailwind CSS (CDN JIT) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bgdark: "#0f0f0f",
+              bgsection: "#060406",
+              accent: "#ff9300",
+              textmain: "#ffffff",
+              textsub: "#cfcfcf",
+            },
+            fontFamily: { jp: ["Noto Sans JP", "sans-serif"] },
+            boxShadow: {
+              cta: "0 8px 25px rgba(255,147,0,0.4)",
+              ctaHover: "0 12px 35px rgba(255,147,0,0.5)",
+              glow: "0 0 20px rgba(255,147,0,0.3), 0 0 40px rgba(255,147,0,0.15)",
+              glowHover: "0 0 30px rgba(255,147,0,0.5), 0 0 60px rgba(255,147,0,0.25)",
+              video: "0 10px 40px rgba(0,0,0,0.3)",
+              videoHover: "0 15px 50px rgba(255,147,0,0.4)",
+              card: "0 4px 20px rgba(0,0,0,0.1)",
+            },
+            keyframes: {
+              slideLeft: {
+                "0%": { transform: "translateX(0)" },
+                "100%": { transform: "translateX(-100%)" },
+              },
+              slideRight: {
+                "0%": { transform: "translateX(-100%)" },
+                "100%": { transform: "translateX(0)" },
+              },
+              bounceSoft: {
+                "0%,20%,50%,80%,100%": { transform: "translateY(0)" },
+                "40%": { transform: "translateY(-6px)" },
+                "60%": { transform: "translateY(-3px)" },
+              },
+              pulse: {
+                "0%, 100%": { opacity: "1" },
+                "50%": { opacity: "0.8" },
+              },
+              shimmer: {
+                "0%": { backgroundPosition: "-1000px 0" },
+                "100%": { backgroundPosition: "1000px 0" },
+              },
+              float: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-10px)" },
+              },
+              scaleIn: {
+                "0%": { transform: "scale(0.95)", opacity: "0" },
+                "100%": { transform: "scale(1)", opacity: "1" },
+              },
+            },
+            animation: {
+              slideLeft: "slideLeft 40s linear infinite",
+              slideLeftSlow: "slideLeft 45s linear infinite",
+              slideRight: "slideRight 35s linear infinite",
+              bounceSoft: "bounceSoft 1.8s infinite cubic-bezier(0.6,0.05,0.2,0.99)",
+              pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+              shimmer: "shimmer 3s linear infinite",
+              float: "float 3s ease-in-out infinite",
+              scaleIn: "scaleIn 0.5s ease-out",
+            },
+            backgroundImage: {
+              'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+              'gradient-shine': 'linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent)',
+            },
+          },
+        },
+      };
+    </script>
+
+  </head>
+  <body class="bg-white font-jp overflow-x-hidden">
+    <div class="hidden md:block fixed inset-0 z-0 pointer-events-none opacity-5">
+        <div class="relative w-full h-full max-w-screen-2xl mx-auto">
+            
+            <img src="./img/ninja3.png" alt="" class="absolute top-[15%] left-[5%] w-32 animate-float" />
+            
+            <img src="./img/ninja4.png" alt="" class="absolute top-[40%] right-[2%] w-48 -rotate-12" />
+            
+            <img src="./img/ninja5.png" alt="" class="absolute bottom-[5%] left-[10%] w-40" />
+            
+            <img src="./img/ninja6.png" alt="" class="absolute top-[55%] left-[30%] w-36 rotate-6 animate-float" />
+            
+            <img src="./img/ninja7.png" alt="" class="absolute top-24 right-[15%] w-32 rotate-12" />
+            
+            <img src="./img/ninja8.png" alt="" class="absolute bottom-[10%] right-[8%] w-52" />
+
+        </div>
+    </div>
+    <!-- Fixed Header -->
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-lg border-b border-accent/10 z-50">
+      <div class="container mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
+        <div class="flex items-center">
+          <img src="./img/logo.png" alt="忍者DSP" class="h-8 md:h-10" />
+        </div>
+
+        <!-- Desktop Navigation -->
+       <nav class="hidden lg:flex items-center gap-6">
+          <a href="#hero" class="text-sm hover:text-accent transition-colors">トップ</a>
+          <a href="#ai-motion" class="text-sm hover:text-accent transition-colors">AIモーション生成</a>
+          <a href="#copy-generation" class="text-sm hover:text-accent transition-colors">コピー生成</a>
+          <a href="#results" class="text-sm hover:text-accent transition-colors">実績</a>
+          <a href="#why-ninja" class="text-sm hover:text-accent transition-colors">選ばれる理由</a>
+          <a href="#qa" class="text-sm hover:text-accent transition-colors">Q&A</a>
+          <a
+            href="https://adtargeting.shinobi.jp/contact.php?source=ai_banner"
+            class="bg-accent hover:bg-orange-600 text-white px-6 py-2 rounded-md transition-colors text-sm font-bold"
+          >
+            お問い合わせ
+          </a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="lg:hidden p-2">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <nav id="mobile-menu" class="hidden lg:hidden bg-white border-t">
+        <div class="container mx-auto px-4 py-4 flex flex-col gap-3">
+          <a href="#hero" class="text-sm hover:text-accent transition-colors py-2">トップ</a>
+          <a href="#ai-motion" class="text-sm hover:text-accent transition-colors py-2">AIモーション</a>
+          <a href="#copy-generation" class="text-sm hover:text-accent transition-colors py-2">コピー生成</a>
+          <a href="#results" class="text-sm hover:text-accent transition-colors py-2">実績</a>
+          <a href="#why-ninja" class="text-sm hover:text-accent transition-colors py-2">選ばれる理由</a>
+          <a href="#qa" class="text-sm hover:text-accent transition-colors py-2">Q&A</a>
+          <a
+            href="https://adtargeting.shinobi.jp/contact.php?source=ai_banner"
+            class="bg-accent hover:bg-orange-600 text-white px-6 py-3 rounded-md transition-colors text-sm font-bold text-center"
+          >
+            お問い合わせ
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Scroll to Top Button -->
+    <button
+      id="scroll-to-top"
+      class="fixed bottom-8 right-8 bg-gray-900 hover:bg-orange-600 text-white p-3 rounded-full shadow-lg transition-all opacity-0 pointer-events-none z-40"
+      aria-label="トップに戻る"
+    >
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+      </svg>
+    </button>
+
+    <!-- Main Container -->
+    <div class="pt-16 md:pt-20 relative z-10">
+
+        <!-- Hero Section -->
+        <section id="hero" class="relative w-full overflow-hidden">
+          <!-- Background Image (Full Width) -->
+          <div class="absolute inset-0 w-screen left-1/2 -translate-x-1/2 h-full min-h-[600px] md:min-h-[723px] z-0">
+            <img
+              alt=""
+              class="absolute inset-0 w-full h-full object-cover pointer-events-none"
+              src="./img/bg_main.jpg"
+            />
+          </div>
+
+          <!-- Hero Content -->
+          <div class="container mx-auto px-4 md:px-8 relative z-10">
+            <!-- Hero Text -->
+            <div class="flex flex-col gap-8 md:gap-[58px] items-center text-center text-white w-full pt-16 md:pt-[106px] fade-in-up">
+              <h1 class="font-black text-3xl md:text-[54px] leading-[1.5] w-full px-4 drop-shadow-[0_4px_20px_rgba(255,147,0,0.6)] animate-scaleIn">
+                <span class="bg-gradient-to-r from-white via-orange-100 to-white bg-clip-text text-transparent">AIバナー生成で<br class="lg:hidden">広告効果を最大化</span>
+              </h1>
+              <p class="font-bold text-xl md:text-[34px] leading-normal w-full px-4 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] relative">
+                <span class="relative z-10">インパクト抜群　動くバナー広告</span>
+                <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-accent to-transparent rounded-full"></span>
+              </p>
+            </div>
+
+            <!-- Banner Examples -->
+            <div class="flex flex-col md:flex-row gap-6 md:gap-[26px] items-center justify-center relative z-10 w-full mt-8 md:mt-[58px] pb-16 md:pb-24 fade-in-up">
+              <div class="flex flex-col gap-[10px] items-center justify-center w-full md:w-auto group">
+                <p class="font-bold text-[18px] leading-[1.6] text-white drop-shadow-lg">出会い系</p>
+                <div class="relative h-auto w-full overflow-hidden rounded-lg border-2 border-accent/30 shadow-video hover:shadow-videoHover transition-all duration-300 group-hover:scale-105">
+                  <div class="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent pointer-events-none z-10"></div>
+                  <video
+                    class="w-full h-full object-cover"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                  >
+                    <source src="./movie/banner5.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-[10px] items-center justify-center w-full md:w-auto group">
+                <p class="font-bold text-[18px] leading-[1.6] text-white drop-shadow-lg">電子コミック</p>
+                <div class="relative h-auto w-full max-w-[400px] md:max-w-[300px] overflow-hidden rounded-lg border-2 border-accent/30 shadow-video hover:shadow-videoHover transition-all duration-300 group-hover:scale-105">
+                  <div class="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent pointer-events-none z-10"></div>
+                  <video
+                    class="w-full h-full object-cover"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                  >
+                    <source src="./movie/banner2.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-[10px] items-center justify-center w-full md:w-auto group">
+                <p class="font-bold text-[18px] leading-[1.6] text-white drop-shadow-lg">ライブチャット</p>
+                <div class="relative h-auto w-full overflow-hidden rounded-lg border-2 border-accent/30 shadow-video hover:shadow-videoHover transition-all duration-300 group-hover:scale-105">
+                  <div class="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent pointer-events-none z-10"></div>
+                  <video
+                    class="w-full h-full object-cover"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                  >
+                    <source src="./movie/banner4.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- AIで広告が動き出す Section -->
+        <section id="ai-motion" class="py-12 md:py-20">
+          <div class="container mx-auto px-4 md:px-8">
+            <h2 class="font-bold text-2xl md:text-[34px] leading-normal text-[#080808] text-center w-full mb-12 md:mb-20 fade-in-up relative">
+              <span class="relative inline-block">
+                AIで広告が動き出す
+                <span class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-transparent via-accent to-transparent rounded-full"></span>
+              </span>
+            </h2>
+
+            <div class="flex flex-col gap-16 md:gap-[146px] items-center max-w-[821px] mx-auto">
+              <!-- Features -->
+              <div class="flex flex-col gap-10 md:gap-[45px] items-start w-full">
+                <!-- Feature 1 -->
+                <div class="flex flex-col md:flex-row gap-6 md:gap-[31px] items-center w-full fade-in-up group">
+                  <div class="flex flex-col gap-6 md:gap-[31px] items-start justify-center text-[#0b0b0b] text-[16px] w-full md:w-auto">
+                    <p class="font-bold leading-[1.6] text-lg relative pl-4 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-8 before:bg-gradient-to-b before:from-accent before:to-orange-600 before:rounded-full">圧倒的な視認性の高さを実現</p>
+                    <div class="font-normal leading-[1.6] w-full md:w-[405px]">
+                      <p class="mb-0">動きのあるバナーに変わることで、ユーザーの目を引き、スクロールやタップの手を止める「視認性の高さ」を実現。</p>
+                      <p class="mb-0">既存バナーをそのまま活かしながら、広告効果を大幅に向上させることができます。</p>
+                    </div>
+                  </div>
+                  <div class="relative h-[216px] w-full md:w-[384px] overflow-hidden rounded-lg shadow-video hover:shadow-videoHover transition-all duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent pointer-events-none z-10"></div>
+                    <div class="absolute inset-0 border-2 border-accent/20 rounded-lg pointer-events-none z-10"></div>
+                    <video
+                      class="w-full h-full object-cover"
+                      autoplay
+                      loop
+                      muted
+                      playsinline
+                    >
+                      <source src="./movie/man.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="flex flex-col md:flex-row-reverse gap-6 md:gap-[100px] items-center w-full fade-in-up group">
+                  <div class="flex flex-col gap-6 md:gap-[31px] items-start justify-center text-[#0b0b0b] text-[16px] w-full md:w-auto">
+                    <p class="font-bold leading-[1.6] text-lg relative pl-4 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-8 before:bg-gradient-to-b before:from-accent before:to-orange-600 before:rounded-full">独自AIモーション生成技術を広告に活用</p>
+                    <div class="font-normal leading-[1.6] w-full md:w-[384px]">
+                      <p class="mb-0">静止画バナーの人物やキャラクターを、AIによって自然で魅力的な動きへと変化させることが可能です。</p>
+                      <p>忍者ツールズの最新AIモーション生成技術により、人物の動きや髪の揺れなどの細やかな動きも自然に再現します。</p>
+                    </div>
+                  </div>
+                  <div class="relative h-[227px] w-full md:w-[336px] overflow-hidden rounded-lg shadow-video hover:shadow-videoHover transition-all duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent pointer-events-none z-10"></div>
+                    <div class="absolute inset-0 border-2 border-accent/20 rounded-lg pointer-events-none z-10"></div>
+                    <video
+                      class="w-full h-full object-cover"
+                      autoplay
+                      loop
+                      muted
+                      playsinline
+                    >
+                      <source src="./movie/girl2.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Before/After Comparison -->
+              <div class="w-full fade-in-up">
+                <h3 class="font-bold text-xl md:text-[28px] leading-[1.6] text-[#0b0b0b] text-center mb-8 md:mb-12">従来のバナー vs AIバナー</h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-[900px] mx-auto">
+                  <!-- 従来のバナー -->
+                  <div class="flex flex-col gap-4 items-center group">
+                    <p class="font-bold text-lg text-[#0b0b0b] text-center">従来のバナー</p>
+                    <div class="relative h-auto w-full overflow-hidden rounded-lg shadow-card hover:shadow-video transition-all duration-300 group-hover:scale-105">
+                      <div class="absolute inset-0 border-2 border-gray-300 rounded-lg pointer-events-none z-10"></div>
+                      <img
+                        alt="従来のバナー"
+                        class="w-full h-full object-cover"
+                        src="./img/banner7.png"
+                      />
+                    </div>
+                    <p class="text-sm text-gray-600 text-center">静止画バナー</p>
+                  </div>
+
+                  <!-- AIバナー -->
+                  <div class="flex flex-col gap-4 items-center group">
+                    <p class="font-bold text-lg text-accent text-center">AIバナー</p>
+                    <div class="relative h-auto w-full overflow-hidden rounded-lg shadow-video hover:shadow-videoHover transition-all duration-300 group-hover:scale-105">
+                      <div class="absolute inset-0  to-transparent pointer-events-none z-10"></div>
+                      <div class="absolute inset-0 border-2 border-accent/30 rounded-lg pointer-events-none z-10"></div>
+                      <video
+                        class="w-full h-full object-cover"
+                        autoplay
+                        loop
+                        muted
+                        playsinline
+                      >
+                        <source src="./movie/banner1.mp4" type="video/mp4" />
+                      </video>
+                    </div>
+                    <p class="text-sm text-accent font-bold text-center">動きのあるバナー</p>
+                  </div>
+                </div>
+
+                <div class="text-center mt-8 md:mt-10">
+                  <p class="font-normal text-[#0b0b0b] text-[16px] leading-[1.6]">
+                    同じ素材でも、AIが動きを加えることで視認性が大幅に向上します
+                  </p>
+                </div>
+              </div>
+
+              <!-- CTA 1 -->
+              <div class="w-full fade-in-up">
+                </div>
+
+        </div> </div> <div class="relative py-16 md:py-20 fade-in-up overflow-hidden">
+              <div class="absolute inset-0 w-screen left-1/2 -translate-x-1/2 bg-[#d9d9d9] -z-10">
+                <div class="absolute inset-0 opacity-30" style="background-image: radial-gradient(circle, #ff9300 1px, transparent 1px); background-size: 20px 20px;"></div>
+              </div>
+
+              <div class="flex flex-col gap-8 items-center justify-center relative z-10 px-4">
+                <div class="font-bold leading-[1.6] text-[#0b0b0b] text-[16px] text-center max-w-[821px]">
+                  <p class="mb-2">無料でサンプルバナーを作成させていただくことも可能です。</p>
+                  <p>まずは下記よりお問い合わせください</p>
+                </div>
+
+                <a
+                  href="https://adtargeting.shinobi.jp/contact.php?source=ai_banner"
+                  class="relative bg-gradient-to-r from-accent to-orange-500 hover:from-orange-600 hover:to-orange-700 transition-all duration-300 flex items-center justify-center px-[43px] py-[12px] rounded-[7px] shadow-glow hover:shadow-glowHover transform hover:scale-105 hover:-translate-y-1 before:absolute before:inset-0 before:bg-gradient-shine before:bg-[length:200%_100%] before:animate-shimmer before:rounded-[7px] overflow-hidden"
+                >
+                  <span class="font-black text-[16px] leading-[1.6] text-center text-white whitespace-nowrap relative z-10">無料相談はこちら</span>
+                </a>
+
+                <div class="hidden lg:block absolute left-1/2 -translate-x-1/2 lg:translate-x-[-350px] top-1/2 -translate-y-1/2 h-[105px] w-[102px] rotate-180 scale-y-[-100%]">
+                  <img
+                    alt="忍者キャラクター"
+                    class="w-full h-full object-cover animate-float"
+                    src="./img/ninja1.png"
+                  />
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <!-- AIで大量に広告コピーを生成 Section -->
+        <section id="copy-generation" class="py-12 md:py-20">
+          <div class="container mx-auto px-4 md:px-8 max-w-[821px]">
+            <div class="flex flex-col gap-12 md:gap-[56px] items-center w-full fade-in-up">
+              <h2 class="font-bold text-2xl md:text-[34px] leading-normal text-[#080808] text-center w-full relative">
+                <span class="relative inline-block">
+                  AIで大量に広告コピーを生成
+                  <span class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-transparent via-accent to-transparent rounded-full"></span>
+                </span>
+              </h2>
+
+              <div class="flex flex-col gap-6 md:gap-[27px] items-center w-full">
+                <div class="flex flex-col gap-6 md:gap-[33px] items-center justify-center text-[#0b0b0b] w-full">
+                  <p class="font-bold text-xl md:text-[28px] leading-[1.6] text-center">大規模A/Bテストで広告最適化</p>
+                  <div class="font-normal leading-[1.6] text-[16px] text-center w-full">
+                    <p class="mb-2">AIで広告コピーが異なるバージョンを大量生成し、一気にA/Bテストが可能です。</p>
+                    <p>とにかくたくさんのクリエイティブを試すことで、商品を売るための最短ルートを見つけられます</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-4 md:gap-[14px] items-center w-full mt-12 md:mt-20 fade-in-up">
+              <div class="h-[180px] md:h-[226px] w-full max-w-[771px] rounded-md overflow-hidden">
+                <img
+                  alt="バナー例"
+                  class="w-full h-full object-cover"
+                  src="./img/banner6.png"
+                />
+              </div>
+              <p class="font-normal leading-[1.6] text-[#0b0b0b] text-[16px] text-center w-full">
+                動画とコピーの組み合わせも可能になります！AIの力を借りて広告効果を最大化しませんか？
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA 2 -->
+        <div class="relative py-16 md:py-20 fade-in-up overflow-hidden">
+          <!-- Full Width Background -->
+          <div class="absolute inset-0 w-screen left-1/2 -translate-x-1/2 bg-[#d9d9d9] -z-10"></div>
+
+          <div class="container mx-auto px-4 md:px-8 max-w-[821px]">
+            <div class="flex flex-col gap-8 items-center justify-center relative z-10">
+              <div class="font-bold leading-[1.6] text-[#0b0b0b] text-[16px] text-center w-full">
+                <p class="mb-2">センシティブワードを用いる広告コピーのAI生成についてお悩みの方へ</p>
+                <p>まずはご気軽に下記のお問い合わせボタンからお問い合わせください</p>
+              </div>
+
+              <div class="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-20 h-[105px] w-[102px]">
+                <img
+                  alt="忍者キャラクター"
+                  class="w-full h-full object-cover animate-float"
+                  src="./img/ninja1.png"
+                />
+              </div>
+
+              <a
+                href="https://adtargeting.shinobi.jp/contact.php?source=ai_banner"
+                class="relative bg-gradient-to-r from-accent to-orange-500 hover:from-orange-600 hover:to-orange-700 transition-all duration-300 flex items-center justify-center px-[43px] py-[12px] rounded-[7px] shadow-glow hover:shadow-glowHover transform hover:scale-105 hover:-translate-y-1 before:absolute before:inset-0 before:bg-gradient-shine before:bg-[length:200%_100%] before:animate-shimmer before:rounded-[7px] overflow-hidden"
+              >
+                <span class="font-black text-[16px] leading-[1.6] text-center text-white whitespace-nowrap">無料相談はこちら</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 獲得数が1.5倍に！CPAも劇的改善 Section -->
+        <section id="results" class="py-12 md:py-20">
+          <div class="container mx-auto px-4 md:px-8 max-w-[821px]">
+            <h2 class="font-bold text-2xl md:text-[34px] leading-normal text-[#080808] text-center w-full mb-12 md:mb-16 fade-in-up relative">
+              <span class="relative inline-block">
+                獲得数が1.5倍に！<br class="lg:hidden">CPAも劇的改善
+                <span class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-transparent via-accent to-transparent rounded-full"></span>
+              </span>
+            </h2>
+
+            <!-- Table -->
+            <div class="flex flex-col gap-[9px] items-start w-full max-w-[725px] mx-auto fade-in-up">
+            <p class="font-normal text-[18px] leading-[1.6] text-[#0b0b0b]">業種：出会い系</p>
+
+            <div class="bg-[#363636] border border-[#5b5b5b] rounded-[4px] w-full overflow-x-auto">
+              <div class="min-w-[600px]">
+                <!-- Table Header -->
+                <div class="flex w-full">
+                  <div class="bg-[#ffd48f] border-[#5b5b5b] border-l border-t flex-1 px-[12px] py-[10px]">
+                    <p class="font-bold text-[#414141] text-sm md:text-[16px] leading-[1.3]">導入前後の比較</p>
+                  </div>
+                  <div class="bg-[#ffd48f] border-[#5b5b5b] border-l border-t flex-1 px-[12px] py-[10px]">
+                    <p class="font-bold text-[#414141] text-sm md:text-[16px] leading-[1.3]">導入前（従来のバナー）</p>
+                  </div>
+                  <div class="bg-[#ffd48f] border-[#5b5b5b] border-l border-t flex-1 px-[12px] py-[10px]">
+                    <p class="font-bold text-[#414141] text-sm md:text-[16px] leading-[1.3]">AIバナー導入後</p>
+                  </div>
+                </div>
+
+                <!-- Table Row 1 -->
+                <div class="flex w-full bg-white">
+                  <div class="bg-white border-[#5b5b5b] border-l border-t flex-1 px-[12px] py-[10px]">
+                    <p class="font-bold text-[#414141] text-sm md:text-[16px] leading-[1.3]">月間獲得予算</p>
+                  </div>
+                  <div class="bg-white border-[#5b5b5b] border-l border-t flex-1 px-[12px] py-[10px]">
+                    <p class="font-bold text-[#414141] text-sm md:text-[16px] leading-[1.3]">100万円</p>
+                  </div>
+                  <div class="bg-white border-[#5b5b5b] border-l border-t flex-1 px-[12px] py-[10px]">
+                    <p class="font-bold text-[#414141] text-sm md:text-[16px] leading-[1.3]">100万円（据え置き）</p>
+                  </div>
+                </div>
+
+                <!-- Table Row 2 -->
+                <div class="flex w-full bg-white">
+                  <div class="bg-white border-[#5b5b5b] border-l border-t flex-1 px-[12px] py-[10px]">
+                    <p class="font-bold text-[#414141] text-sm md:text-[16px] leading-[1.3]">月間獲得件数</p>
+                  </div>
+                  <div class="bg-white border-[#5b5b5b] border-l border-t flex-1 px-[12px] py-[10px]">
+                    <p class="font-bold text-[#414141] text-sm md:text-[16px] leading-[1.3]">100件</p>
+                  </div>
+                  <div class="bg-white border-[#5b5b5b] border-l border-t flex-1 px-[12px] py-[10px]">
+                    <p class="font-black text-[#ff6d6d] text-sm md:text-[16px] leading-[1.3]">150件（1.5倍達成！！）</p>
+                  </div>
+                </div>
+
+                <!-- Table Row 3 -->
+                <div class="flex w-full bg-white">
+                  <div class="bg-white border-[#5b5b5b] border-l border-t flex-1 px-[12px] py-[10px]">
+                    <p class="font-bold text-[#414141] text-sm md:text-[16px] leading-[1.3]">CPA（顧客獲得単価）</p>
+                  </div>
+                  <div class="bg-white border-[#5b5b5b] border-l border-t flex-1 px-[12px] py-[10px]">
+                    <p class="font-bold text-[#414141] text-sm md:text-[16px] leading-[1.3]">10,000円</p>
+                  </div>
+                  <div class="bg-white border-[#5b5b5b] border-l border-t flex-1 px-[12px] py-[10px]">
+                    <p class="font-black text-[#ff6d6d] text-sm md:text-[16px] leading-[1.3]">6,666円（33%改善！！）</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Results Description -->
+          <div class="flex flex-col gap-6 md:gap-[27px] items-center w-full mt-12 fade-in-up">
+            <div class="flex flex-col gap-6 md:gap-[33px] items-center justify-center">
+              <div class="font-normal leading-[1.6] text-[#0b0b0b] text-[16px] text-center w-full">
+                <p class="mb-2">同じ素材のバナーを使用し、A/Bテストを実施した結果、</p>
+                <p>独自のAI技術でバナー内の女性に自然な動きを加えることで、<span class="font-black text-[#ff6d6d]">獲得数は1.5倍に伸長</span>しました。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-6 md:gap-[27px] items-center fade-in-up">
+            <div class="flex flex-col gap-6 md:gap-[33px] items-center justify-center w-full">
+              <div class="font-normal leading-[1.6] text-[#0b0b0b] text-[16px] text-center w-full max-w-[730px] px-4">
+                <p class="mb-2">AIが生み出す「生きた動き」がユーザーの視線を強く惹きつけ、従来の静止バナーでは得られなかった高い反応率を実現。結果として、同じ広告予算でもCPAを大幅に改善することに成功しました。</p>
+                <p class="mb-2">&nbsp;</p>
+                <p>おすすめ業種：マッチングアプリ、ライブチャット、電子コミック等</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+
+        <!-- なぜ忍者DSPなのか？ Section -->
+        <section id="why-ninja" class="py-12 md:py-20">
+          <div class="container mx-auto px-4 md:px-8">
+            <h2 class="font-bold text-2xl md:text-[34px] leading-normal text-[#080808] text-center w-full mb-12 md:mb-16 fade-in-up relative">
+              <span class="relative inline-block">
+                なぜ忍者DSPなのか？
+                <span class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-transparent via-accent to-transparent rounded-full"></span>
+              </span>
+            </h2>
+
+            <div class="flex flex-col gap-10 md:gap-[53px] items-start max-w-[976px] mx-auto">
+              <!-- Reason 1 -->
+              <div class="flex flex-col md:flex-row gap-6 md:gap-[31px] items-center justify-center w-full fade-in-up">
+                <div class="h-auto w-full md:w-[387px] relative overflow-hidden rounded-md">
+                  <img
+                    alt="AI制限"
+                    class="w-full h-full object-cover"
+                    src="./img/ai1.png"
+                  />
+                </div>
+                <div class="flex flex-col gap-4 md:gap-[20px] items-start justify-center leading-[1.6] text-[#0b0b0b] text-[16px] w-full md:w-auto">
+                  <p class="font-bold leading-[1.6] text-lg relative pl-4 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-8 before:bg-gradient-to-b before:from-accent before:to-orange-600 before:rounded-full">主要LLMの生成制限が<br class="lg:hidden">アダルト広告制作を阻害</p>
+                  <p class="font-normal w-full md:w-[405px]">
+                    現在主流のLLM（大規模言語モデル）を活用したAIは、その開発元が定める厳格な利用規約により、わずかでも成人向けと判断される表現を検知すると、生成を停止・拒否する仕組みになっています。この制約が、ターゲティングに必要な際どい表現や、インパクトのあるクリエイティブの制作を妨げているのが現状です。
+                  </p>
+                </div>
+              </div>
+
+              <!-- Reason 2 -->
+              <div class="flex flex-col md:flex-row-reverse gap-6 md:gap-[31px] items-center justify-center w-full fade-in-up">
+                <div class="h-auto w-full md:w-[387px] relative overflow-hidden rounded-md">
+                  <img
+                    alt="独自AI"
+                    class="w-full h-full object-cover"
+                    src="./img/ai2.png"
+                  />
+                </div>
+                <div class="flex flex-col gap-4 md:gap-[20px] items-start justify-center leading-[1.6] text-[#0b0b0b] text-[16px] w-full md:w-auto">
+                  <p class="font-bold leading-[1.6] text-lg relative pl-4 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-8 before:bg-gradient-to-b before:from-accent before:to-orange-600 before:rounded-full">独自AIで生成クリエイティブの<br class="lg:hidden">柔軟性を確保</p>
+                  <p class="font-normal w-full md:w-[405px]">
+                    忍者DSPでは、外部LLMに依存せず、自社専用の高性能GPUインフラストラクチャ上で独自にAIを構築・運用しています。そのため、一般的な生成AIが持つ一律のコンテンツフィルターに影響されることなく、業界やターゲットに最適化された柔軟なクリエイティブポリシーを適用可能です。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA 3 -->
+        <div class="relative py-16 md:py-20 fade-in-up overflow-hidden">
+          <!-- Full Width Background -->
+          <div class="absolute inset-0 w-screen left-1/2 -translate-x-1/2 bg-[#d9d9d9] -z-10"></div>
+
+          <div class="container mx-auto px-4 md:px-8 max-w-[821px]">
+            <div class="flex flex-col gap-8 items-center justify-center relative z-10">
+              <div class="font-bold leading-[1.6] text-[#0b0b0b] text-[16px] text-center w-full">
+                <p class="mb-2">マーケティング効果を最大化</p>
+                <p>アダルト分野などの攻めた表現にも対応できる体制を整えています。</p>
+              </div>
+
+              <a
+                href="https://adtargeting.shinobi.jp/contact.php?source=ai_banner"
+                class="relative bg-gradient-to-r from-accent to-orange-500 hover:from-orange-600 hover:to-orange-700 transition-all duration-300 flex items-center justify-center px-[43px] py-[12px] rounded-[7px] shadow-glow hover:shadow-glowHover transform hover:scale-105 hover:-translate-y-1 before:absolute before:inset-0 before:bg-gradient-shine before:bg-[length:200%_100%] before:animate-shimmer before:rounded-[7px] overflow-hidden"
+              >
+                <span class="font-black text-[16px] leading-[1.6] text-center text-white whitespace-nowrap">無料相談はこちら</span>
+              </a>
+
+              <div class="hidden lg:block absolute left-1/2 -translate-x-1/2 lg:translate-x-[-350px] top-1/2 -translate-y-1/2 h-[105px] w-[102px] rotate-180 scale-y-[-100%]">
+                <img
+                  alt="忍者キャラクター"
+                  class="w-full h-full object-cover animate-float"
+                  src="./img/ninja1.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q&A Section -->
+        <section id="qa" class="py-12 md:py-20">
+          <div class="container mx-auto px-4 md:px-8">
+            <h2 class="font-bold text-2xl md:text-[34px] leading-normal text-[#080808] text-center w-full mb-12 md:mb-16 fade-in-up relative">
+              <span class="relative inline-block">
+                Q&A
+                <span class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-transparent via-accent to-transparent rounded-full"></span>
+              </span>
+            </h2>
+
+            <div class="flex flex-col gap-8 md:gap-[49px] items-start w-full max-w-[583.5px] mx-auto">
+            <!-- Q1 -->
+            <div class="accordion-item border-b-2 border-gray-200 hover:border-accent/30 w-full fade-in-up transition-colors duration-300">
+              <button class="accordion-button flex items-center justify-between w-full py-4 px-2 text-left hover:bg-accent/5 transition-all duration-300 rounded-lg" aria-expanded="false">
+                <div class="flex-1">
+                  <p class="font-normal text-[#0b0b0b] leading-[1.6]">
+                    <span class="text-lg md:text-[21px]">Q1</span><span class="text-[16px] tracking-[6.56px]">.</span><span class="text-[16px]">料金はいくらですか</span>
+                  </p>
+                </div>
+                <div class="h-[11px] w-[15px] flex-shrink-0 ml-4 accordion-icon transition-transform duration-300">
+                  <svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </div>
+              </button>
+              <div class="accordion-content overflow-hidden transition-all duration-300 max-h-0">
+                <div class="pb-4">
+                  <p class="font-normal text-[#0b0b0b] text-[16px] leading-[1.6]">忍者DSPで広告を配信いただく際に無料でご利用いただけます。(2025年現在)</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="accordion-item border-b-2 border-gray-200 hover:border-accent/30 w-full fade-in-up transition-colors duration-300">
+              <button class="accordion-button flex items-center justify-between w-full py-4 px-2 text-left hover:bg-accent/5 transition-all duration-300 rounded-lg" aria-expanded="false">
+                <div class="flex-1">
+                  <p class="font-normal text-[#0b0b0b] leading-[1.6]">
+                    <span class="text-lg md:text-[21px]">Q2</span><span class="text-[16px] tracking-[6.56px]">.</span><span class="text-[16px]">どの広告プラットフォームで配信できますか？</span>
+                  </p>
+                </div>
+                <div class="h-[11px] w-[15px] flex-shrink-0 ml-4 accordion-icon transition-transform duration-300">
+                  <svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </div>
+              </button>
+              <div class="accordion-content overflow-hidden transition-all duration-300 max-h-0">
+                <div class="pb-4">
+                  <p class="font-normal text-[#0b0b0b] text-[16px] leading-[1.6]">現在は忍者DSPでの配信のみ対応しております</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="accordion-item border-b-2 border-gray-200 hover:border-accent/30 w-full fade-in-up transition-colors duration-300">
+              <button class="accordion-button flex items-center justify-between w-full py-4 px-2 text-left hover:bg-accent/5 transition-all duration-300 rounded-lg" aria-expanded="false">
+                <div class="flex-1">
+                  <p class="font-normal text-[#0b0b0b] leading-[1.6]">
+                    <span class="text-lg md:text-[21px]">Q3</span><span class="text-[16px] tracking-[6.56px]">.</span><span class="text-[16px]">忍者DSPについて詳細を教えてください</span>
+                  </p>
+                </div>
+                <div class="h-[11px] w-[15px] flex-shrink-0 ml-4 accordion-icon transition-transform duration-300">
+                  <svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </div>
+              </button>
+              <div class="accordion-content overflow-hidden transition-all duration-300 max-h-0">
+                <div class="pb-4">
+                  <p class="font-normal text-[#0b0b0b] text-[16px] leading-[1.6]">A.忍者DSPについてはこちらをご参照ください</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="accordion-item border-b-2 border-gray-200 hover:border-accent/30 w-full fade-in-up transition-colors duration-300">
+              <button class="accordion-button flex items-center justify-between w-full py-4 px-2 text-left hover:bg-accent/5 transition-all duration-300 rounded-lg" aria-expanded="false">
+                <div class="flex-1">
+                  <p class="font-normal text-[#0b0b0b] leading-[1.6]">
+                    <span class="text-lg md:text-[21px]">Q4</span><span class="text-[16px] tracking-[6.56px]">.</span><span class="text-[16px]">弊社の商材の場合だとどんなバナーができますか</span>
+                  </p>
+                </div>
+                <div class="h-[11px] w-[15px] flex-shrink-0 ml-4 accordion-icon transition-transform duration-300">
+                  <svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </div>
+              </button>
+              <div class="accordion-content overflow-hidden transition-all duration-300 max-h-0">
+                <div class="pb-4">
+                  <p class="font-normal text-[#0b0b0b] text-[16px] leading-[1.6]">ご契約前に、無料でバナーサンプルを作成させていただくことも可能です。</p>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Final CTA -->
+        <div id="contact" class="relative py-16 md:py-24 overflow-hidden">
+          <!-- Full Width Background -->
+          <div class="absolute inset-0 w-screen left-1/2 -translate-x-1/2 bg-[#d9d9d9] -z-10"></div>
+
+          <div class="container mx-auto px-4 md:px-8 max-w-[821px]">
+            <div class="flex flex-col gap-8 items-center justify-center relative z-10">
+              <div class="font-bold leading-[1.6] text-[#0b0b0b] text-[16px] text-center w-full">
+                <p class="mb-2">AIバナーで広告効果を最大化</p>
+                <p>まずはお気軽にお問い合わせください</p>
+              </div>
+
+              <div class="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-20 h-[105px] w-[102px]">
+                <img
+                  alt="忍者キャラクター"
+                  class="w-full h-full object-cover animate-float"
+                  src="./img/ninja1.png"
+                />
+              </div>
+
+              <a
+                href="https://adtargeting.shinobi.jp/contact.php?source=ai_banner"
+                class="relative bg-gradient-to-r from-accent to-orange-500 hover:from-orange-600 hover:to-orange-700 transition-all duration-300 flex items-center justify-center px-[43px] py-[12px] rounded-[7px] shadow-glow hover:shadow-glowHover transform hover:scale-105 hover:-translate-y-1 before:absolute before:inset-0 before:bg-gradient-shine before:bg-[length:200%_100%] before:animate-shimmer before:rounded-[7px] overflow-hidden"
+              >
+                <span class="font-black text-[16px] leading-[1.6] text-center text-white whitespace-nowrap">無料相談はこちら</span>
+              </a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-[#d9d9d9] text-center text-sm py-8 relative z-10">
+      <div
+        class="mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8"
+      >
+        <p class="m-0">
+          &copy; 2025 NINJA Tools Co., Ltd. All Rights Reserved.
+        </p>
+        <a
+          href="https://corp.ninja.co.jp/privacy/"
+          class="hover:text-orange-600"
+          >プライバシーポリシー</a
+        >
+        <a
+          href="https://corp.ninja.co.jp/privacy/cookie/"
+          class="hover:text-orange-600"
+          >Cookiesについて</a
+        >
+        <a href="https://corp.ninja.co.jp/" class="hover:text-orange-600"
+          >会社概要</a
+        >
+      </div>
+    </footer>
+    <!-- JavaScript -->
+    <script>
+      // Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+          });
+        });
+      }
+
+      // Scroll to Top Button
+      const scrollToTopBtn = document.getElementById('scroll-to-top');
+
+      if (scrollToTopBtn) {
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 300) {
+            scrollToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+            scrollToTopBtn.classList.add('opacity-100', 'pointer-events-auto');
+          } else {
+            scrollToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+            scrollToTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
+          }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      }
+
+      // Fade-in Animation on Scroll
+      const fadeInElements = document.querySelectorAll('.fade-in-up');
+
+      const fadeInObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      });
+
+      fadeInElements.forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+        fadeInObserver.observe(el);
+      });
+
+      // Smooth Scroll for Anchor Links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const href = this.getAttribute('href');
+          if (href === '#' || href === '#contact') {
+            e.preventDefault();
+            const target = href === '#' ? document.body : document.querySelector(href);
+            if (target) {
+              const headerOffset = 80;
+              const elementPosition = target.getBoundingClientRect().top;
+              const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+              window.scrollTo({
+                top: href === '#' ? 0 : offsetPosition,
+                behavior: 'smooth'
+              });
+            }
+          } else if (href.startsWith('#')) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+              const headerOffset = 80;
+              const elementPosition = target.getBoundingClientRect().top;
+              const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+              });
+            }
+          }
+        });
+      });
+
+      // Accordion functionality
+      const accordionButtons = document.querySelectorAll('.accordion-button');
+
+      accordionButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const accordionItem = button.closest('.accordion-item');
+          const content = accordionItem.querySelector('.accordion-content');
+          const icon = button.querySelector('.accordion-icon');
+          const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+          // Toggle this accordion
+          if (isExpanded) {
+            content.style.maxHeight = '0';
+            button.setAttribute('aria-expanded', 'false');
+            icon.style.transform = 'rotate(0deg)';
+          } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+            button.setAttribute('aria-expanded', 'true');
+            icon.style.transform = 'rotate(180deg)';
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
